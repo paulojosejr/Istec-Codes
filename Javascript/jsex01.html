@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Exercise</title>
+</head>
+
+<body>
+    <script>
+        let a = 0
+        document.write(a + '<br>')
+        a++
+        document.write(a + '<br>')
+        a = null
+        document.write(a + '<br>')
+        let b = 0
+        b = b + 100
+        document.write(b + '<br>')
+        let c = 10
+        let d = 23
+        document.write(c + ' / ' + d + '= ' + (c / d) + '<br>')
+        document.write(c + ' + ' + d + '= ' + c + d + '<br>')
+        document.write(c + ' + ' + d + '= ' + (c + d) + '<br>')
+        document.write(c + ' + ' + d + '= ' + (c + d) + '<br>')
+
+        let e = 34
+        if (e % 2 == 0) {
+            document.write(e + ' é par!' + '<br>')
+        } else {
+            document.write(e + ' é impar!' + '<br>')
+        }
+
+        // if (ano % 4 == 0) {
+        //     if (ano % 100 != 0) {
+        //         if (ano % 400 == 0) {
+        //             document.write(ano + ' é bissexto!' + '<br')
+        //         }
+        //     }
+        // }
+        let ano = 2012
+
+        if (ano % 4 == 0 && ano % 100 != 0 || ano % 400 != 0) {
+            document.write(ano + ' é bissexto!' + '<br')
+        } else {
+            document.write(ano + ' não é bissexto!' + '<br')
+        }
+    </script>
+</body>
+
+</html>
