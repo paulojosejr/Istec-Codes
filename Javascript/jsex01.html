@@ -25,6 +25,63 @@
         document.write(c + ' + ' + d + '= ' + (c + d) + '<br>')
         document.write(c + ' + ' + d + '= ' + (c + d) + '<br>')
 
+        let str = "boa"
+        document.write(str + '<br>')
+        let str2 = str + " tarde"
+        document.write(str2 + '<br>')
+
+        let boole = true
+        document.write(boole + '<br>')
+
+        let celsius = 60
+        fahrenheit = celsius * 1.8 + 32
+        document.write(`A conversão de ${celsius} celsius para fahrenheit é: ` + fahrenheit + '<br>')
+
+        var arr = [1, 2, 3, 4, 5, 6] ;
+        var sum = arr.reduce(function (a, b) { return a + b; }, 0);
+        document.write('A soma do array é: ' + sum + '<br>')
+
+        function numeroReverso(num) {
+            return (
+                parseFloat(
+                    num
+                        .toString()
+                        .split('')
+                        .reverse()
+                        .join('')
+                ) * Math.sign(num)
+            )
+        }
+        let res = numeroReverso(32243)
+        document.write(res + '<br>')
+
+        function range(start, end) {
+            return Array(end - start + 1).fill().map((_, idx) => start + idx)
+        }
+        var resultado = range(9, 18);
+        document.write(resultado + '<br>')
+
+        let valor1 = 1
+        let valor2 = 3
+        let valor3 = 4
+
+        var maximum = Math.max(valor1, valor2, valor3)
+        document.write('O Maior valor é ' + maximum + '<br>')
+
+        var minimum = Math.min(valor1, valor2, valor3)
+        document.write('O Menor valor é ' + minimum + '<br>')
+
+        let num1 = 12
+        let num2 = 13
+
+        let result = num1 >= num2
+        document.write('Num1 é maior que Num2? ' + result + '<br>')
+        let result2 = num1 <= num2
+        document.write('Num1 é menor que Num2? ' + result2 + '<br>')
+        let result3 = num1 == num2
+        document.write('Num1 é igual a Num2? ' + result3 + '<br>')
+
+
         let e = 34
         if (e % 2 == 0) {
             document.write(e + ' é par!' + '<br>')
@@ -32,16 +89,9 @@
             document.write(e + ' é impar!' + '<br>')
         }
 
-        // if (ano % 4 == 0) {
-        //     if (ano % 100 != 0) {
-        //         if (ano % 400 == 0) {
-        //             document.write(ano + ' é bissexto!' + '<br')
-        //         }
-        //     }
-        // }
-        let ano = 2012
+        let ano = 2000
 
-        if (ano % 4 == 0 && ano % 100 != 0 || ano % 400 != 0) {
+        if (ano % 4 == 0 && ano % 100 != 0 || ano % 400 == 0) {
             document.write(ano + ' é bissexto!' + '<br')
         } else {
             document.write(ano + ' não é bissexto!' + '<br')
