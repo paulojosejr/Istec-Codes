@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 02</title>
+</head>
+
+<body>
+    <script>
+        // document.write('Imprimir 1000 a 2000' + '<br>')
+        // for(let i = 1000; i <= 2000 ; i++){
+        //     document.write(` - ${i}`)
+        // }
+
+        // document.write('Imprimir 1000 a 2000 de 5 em 5' + '<br>')
+        // for(let i = 1000; i <= 2000 ; i = i+5){
+        //     document.write(` - ${i}`)
+        // }
+
+        // document.write('Imprimir 2000 a 1000 de 5 em 5' + '<br>')
+        // for(let i = 2000; i >= 1000 ; i = i-5){
+        //     document.write(` - ${i}`)
+        // }
+
+        // document.write('Imprimir 0 a 20' + '<br>')
+        // for(let i = 0; i <= 20 ; i++){
+        //     document.write(` - ${i}`)
+        // }
+
+        // document.write('Imprimir 0 a 20' + '<br>')
+        // for(let i = 0; i <= 20 ; i++){
+        //     document.write(` - ${i} <br>`)
+        // }
+
+        // document.write('Imprimir 0 a 20 de 2 em 2' + '<br>')
+        // for (let i = 0; i <= 20; i = i + 2) {
+        //     document.write(` - ${i} <br>`)
+        // }
+
+        // document.write('Imprimir 0 a 20 de 2 em 2' + '<br>')
+        // for (let i = 0; i <= 20; i = i + 4) {
+        //     document.write(` - ${i} <br>`)
+        // }
+
+        
+        var a = [1,2,3]
+        document.write(a + '<br>')
+
+        var frutas = []
+        frutas.push('Banana','Uva','Maçã','Pera','Ananas')
+        document.write(frutas[2] + '<br>')
+        document.write(frutas.length + '<br>')
+        frutas.push('Diospiro','Goiaba')
+        document.write(frutas.length + '<br>')
+        frutas.splice(1, 1, 'Laranja')
+        document.write(frutas[0],frutas[1],frutas[2] + '<br>')
+
+        frutas.forEach(element => {
+            document.write(element)
+        });
+
+
+
+    </script>
+</body>
+
+</html>
