@@ -44,24 +44,76 @@
         //     document.write(` - ${i} <br>`)
         // }
 
-        
-        var a = [1,2,3]
+
+        let a = [1, 2, 3]
         document.write(a + '<br>')
 
-        var frutas = []
-        frutas.push('Banana','Uva','Maçã','Pera','Ananas')
+        let frutas = []
+        frutas.push('Banana ', 'Uva ', 'Maçã ', 'Pera ', 'Ananas ')
         document.write(frutas[2] + '<br>')
         document.write(frutas.length + '<br>')
-        frutas.push('Diospiro','Goiaba')
+        frutas.push('Diospiro ', 'Goiaba ')
         document.write(frutas.length + '<br>')
-        frutas.splice(1, 1, 'Laranja')
-        document.write(frutas[0],frutas[1],frutas[2] + '<br>')
+        frutas.splice(1, 1, 'Laranja ')
+        document.write(frutas[0], frutas[1], frutas[2] + '<br>')
 
         frutas.forEach(element => {
             document.write(element)
         });
+        document.write('<br>')
+        frutas.splice(0, frutas.length)
+        document.write(frutas.length + '<br>')
 
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
 
+        let aleatorio = []
+        for (let i = 0; i < 50; i++) {
+            aleatorio.push(getRandom(1, 50))
+        }
+        document.write(aleatorio + '<br>')
+        document.write('<br>')
+
+        let nomes = [" Luan", " Pedro", " Caio", " Mariana", " Lígia", " Rafaela", " Paulo", " Arthur", " Gabriel", " Ricardo"]
+        document.write(nomes + '<br>')
+        document.write('<br>')
+
+        let invertido = []
+        for (let i = 0; i < 50; i++) {
+            invertido.push(getRandom(1, 50))
+        }
+
+        function sorted() {
+            invertido.sort(function (a, b) { return a - b });
+            invertido.reverse()
+            // document.getElementById("demo").innerHTML = points;
+            document.write(invertido + '<br>');
+            document.write('<br>')
+        }
+        sorted()
+
+        let temperatura = []
+        for (let i = 0; i < 12; i++) {
+            temperatura.push(getRandom(5, 25))
+        }
+        document.write(temperatura + '<br>')
+
+        const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+        let mediaTemp = temperatura.reduce(reducer) / temperatura.length
+
+        document.write(`A média da temperatura é: ${mediaTemp.toFixed(2)}°C` + '<br>')
+
+        var max = Math.max(...temperatura)
+        document.write(`A maior temperatura é: ${max}°C` + '<br>')
+
+        var min = Math.min(...temperatura)
+        document.write(`A menor temperatura é: ${min}°C` + '<br>')
+        
+        let newMediaTemp = mediaTemp * 1.02
+
+        document.write(`A nova média da temperatura é: ${newMediaTemp.toFixed(2)}°C` + '<br>')
 
     </script>
 </body>
