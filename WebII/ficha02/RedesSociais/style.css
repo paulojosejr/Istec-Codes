@@ -1,0 +1,86 @@
+body{
+    background-color: rgba(122, 121, 121, 0.308);
+}
+.foto-share{
+    width: 15%;
+    height: 15%;
+    float: left;
+}
+
+.foto-friend{
+    width: 7%;
+    height: 7%;
+    float: left;
+}
+.aside-box{
+    border: 1px solid green;
+}
+
+.title-header{
+    color:white;
+    background-color: greenyellow;
+    font-weight: bold;
+
+}
+
+/*logo e pesquisa*/
+
+#top-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+#top-header #search{
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+/* nav top */
+
+#menu-top ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blue;
+  }
+  
+#menu-top li {
+    float: left;
+    
+}
+  
+#menu-top li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#menu-top li a:hover {
+    background-color: lightblue;
+}
+
+#aside-left {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    background-color: hotpink;
+    text-align: left;
+    height: 100%;
+}
+
+#aside-right {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    display: block;
+    background-color: indigo;
+}
