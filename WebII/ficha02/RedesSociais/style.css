@@ -1,0 +1,187 @@
+body{
+    background-color: rgba(122, 121, 121, 0.308);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+:root {
+    --primaryLightBlue: rgb(72, 171, 224)
+}
+
+.foto-share{
+    width: 15%;
+    height: 15%;
+    float: left;
+}
+
+.foto-friend{
+    width: 7%;
+    height: 7%;
+    float: left;
+}
+.aside-box{
+    border: 2px solid green;
+    border-radius: 5px;
+    margin: 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-header{
+    color:white;
+    background-color: green;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+hr{
+   border: 1px solid var(--primaryLightBlue); 
+   width: 95%;
+}
+
+/* topo logo e search */
+
+#top-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+#top-header #search{
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+/* nav top */
+
+#menu-top ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1;
+    overflow: hidden;
+    background-color: blue;
+}
+  
+#menu-top li {
+    float: left;
+    
+}
+  
+#menu-top li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#menu-top li a:hover {
+    background-color: var(--primaryLightBlue);
+}
+
+/* primary section */
+
+#primary-section {    
+    display: flex;
+    flex-direction: row;
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+  /* aside left*/
+
+#aside-left {
+    width: 20%;
+    padding: 10px;
+}
+
+#foto-perfil{
+    width: 90%;
+    max-width: 200px;
+    padding: 10px;
+}
+
+#nickname{
+    color:var(--primaryLightBlue);
+    font-weight: bold; 
+    font-size: 1.2rem;
+}
+
+
+/* main share*/
+main {
+    width: 60%;
+}
+
+textarea {
+    width: 99%;
+    resize: none;
+}
+
+.title-main{
+    color:white;
+    background-color: blue;
+    font-weight: bold;
+    padding: 0.5rem; 
+}
+#update-share{
+    border: solid 2px blue;
+    border-radius: 5px;
+    background-color: #FAFAFA;
+}
+
+.comment-share {
+    margin: 10px;
+}
+
+/* aside right */
+
+#aside-right {
+    width: 20%;
+    padding: 0.3rem;
+}
+
+/* end aside right*/
+
+#view-all {
+    width: 100%;    
+}
+
+/* menu down*/
+footer {
+    width: 100%;
+}
+
+#menu-down{
+    width: 600px;
+    margin: auto;
+}
+
+#menu-down ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1;
+    overflow: hidden;
+}
+
+#menu-down li {
+    float: left;    
+}
+  
+#menu-down li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 4px 6px;
+    text-decoration: none;
+}

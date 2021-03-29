@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="600px" height="300px"></canvas>
+    <script language="javascript">
+        var canvas = document.getElementById("canvas");
+        var c = canvas.getContext("2d");
+
+        var container = {
+            x: 0,
+            y: 0,
+            width: 600,
+            height: 300
+        };
+        var circles = [{
+            x: 50,
+            y: 100,
+            r: 10,
+            vx: 10,
+            vy: 9,
+            color: 111
+        }];
+
+        function animate() {
+            c.fillStyle = "#d3d3d3";
+            c.fillRect(container.x, container.y, container.width, container.height);
+
+            for (var i = 0; i < circles.length; i++) {
+                c.fillStyle = "black";
+                c.beginPath();
+                c.arc(circles[i].x, circles[i].y, circles[i].r, 0, Math.PI * 2, true);
+                c.fill()
+
+                if (circles[i].x - circles[i].r + circles[i].vx < container.x || circles[i].x + circles[i].r + circles[i].vx > container.x + container.width) {
+                    circles[i].vx = -circles[i].vx;
+                }
+
+                if (circles[i].y + circles[i].r + circles[i].vy > container.y + container.height || circles[i].y - circles[i].r + circles[i].vy < container.y) {
+                    circles[i].vy = -circles[i].vy;
+                }
+
+                circles[i].x += circles[i].vx
+                circles[i].y += circles[i].vy
+            }
+
+            requestAnimationFrame(animate);
+        }
+        requestAnimationFrame(animate);
+    </script>
+</body>
+
+</html>
