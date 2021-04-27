@@ -7,17 +7,17 @@ class CircularLinkedList:
     def __init__(self):
         self.last = None
  
-    # This function is only for empty list
+    # Está Função é apenas para lista vazia
     def addToEmpty(self, data):
  
         if (self.last != None):
             return self.last
  
-        # Creating the newnode temp
+        # Criando o novo node temporário
         temp = Node(data)
         self.last = temp
  
-        # Creating the link
+        # Criando o link
         self.last.next = self.last
         return self.last
  
@@ -78,7 +78,6 @@ class CircularLinkedList:
             if temp == self.last.next:
                 break
  
-# Driver Code
 if __name__ == '__main__':
  
     llist = CircularLinkedList()
@@ -91,6 +90,3 @@ if __name__ == '__main__':
     last = llist.addAfter(10,8)
  
     llist.traverse()
- 
-# This code is contributed by
-# Aditya Singh
